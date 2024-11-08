@@ -656,10 +656,10 @@ class YoutubePlayerController implements YoutubePlayerIFrameAPI {
     switch (featureName) {
       case 'emb_rel_pause':
       case 'emb_rel_end':
-      case 'emb_info':
         final videoId = params['v'];
         if (videoId != null) loadVideoById(videoId: videoId);
         break;
+      case 'emb_info':
       case 'emb_title':
       case 'emb_logo':
       case 'social':
